@@ -27,7 +27,7 @@ const AddTodo = () => {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        await axios.post(https://todo-web-app-mskh.onrender.com/api/create", formData).then((response)=>{
+        await axios.post("https://todo-web-app-mskh.onrender.com/api/create", formData).then((response)=>{
             toast.success(response.data.message, {position:"top-right"})
             navigate('/')
         }).catch(error=>console.log(error))
