@@ -1,0 +1,89 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container */
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Heading */
+  .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 30px;
+  }
+  
+ 
+
+  
+
+  
+  /* Todo card container */
+  .todo-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Title and buttons layout */
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title-container h3 {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin: 0;
+  }
+  
+  .btns {
+    display: flex;
+    gap: 19px;
+  }
+  
+  /* Buttons */
+  .btns h4 {
+    color: #4CAF50;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .btns h4:hover {
+    color: #45a049;
+    text-decoration: underline;
+  }
+  
+  /* Divider */
+  .todo-container hr {
+    border: none;
+    border-top: 2px solid #f4f4f9;
+    margin: 15px 0;
+  }
+  a{
+    /* text-decoration: none; */
+    font-size: 16px;
+    color: #4CAF50;
+    font-style: bold;
+  }
+  
+  /* Description */
+  .todo-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555555;
+  }
+  
