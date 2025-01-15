@@ -11,7 +11,7 @@ const GetTodo = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:8000/api/read');
+                const response = await axios.get('https://todo-web-app-mskh.onrender.com/api/read');
                 setTodoData(response.data.reverse()); // Correct usage of response.data
             } catch (error) {
                 console.error('Error fetching todos:', error);
