@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import GetTodo from './components/GetTodo/GetTodo'
 import AddTodo from './components/AddTodo/AddTodo'
-import UpdateTodo from './components/updateTodo/UpdateTodo'
+import UpdateTodo from './components/UpdateTodo/UpdateTodo'
 
 
 const App = () => {
