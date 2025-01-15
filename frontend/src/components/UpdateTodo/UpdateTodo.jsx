@@ -24,7 +24,7 @@ const UpdateTodo = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:8000/api/readone/${id}`);
+                const response = await axios.get(`https://todo-web-app-mskh.onrender.com/api/readone/${id}`);
                 setTodoData(response.data);
             } catch (error) {
                 console.error("Error fetching todo:", error);
@@ -37,7 +37,7 @@ const UpdateTodo = () => {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        await axios.put(`http://localhost:8000/api/update/${id}`, todoData).then((response)=>{
+        await axios.put(`https://todo-web-app-mskh.onrender.com/api/update/${id}`, todoData).then((response)=>{
             toast.success(response.data.message, {position:"top-right"})
             navigate('/')
         }).catch(error=>console.log(error))
