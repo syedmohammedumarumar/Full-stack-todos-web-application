@@ -22,7 +22,7 @@ const GetTodo = () => {
     }, []); // Add dependency array to ensure this runs only once
 
     const deleteTodo = async(todoId) => {
-        await axios.delete(`http://localhost:8000/api/delete/${todoId}`).then((response)=>{
+        await axios.delete(`https://todo-web-app-mskh.onrender.com/api/delete/${todoId}`).then((response)=>{
             setTodoData((prevTodo)=>prevTodo.filter((todoData)=>todoData._id!==todoId))
             toast.success(response.data.message,{position:"top-right"})
         }).catch((error)=> console.log(error));
